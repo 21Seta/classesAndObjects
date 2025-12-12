@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Payment cardpayment = new Payment();
         cardpayment.fullName = "გიორგი სეთურიძე";
-
+        cardpayment.paymenType = "ბარათი";
         cardpayment.amount = 99;
         cardpayment.CardNumber = "123456789";
         cardpayment.verify = true ;
@@ -11,8 +11,9 @@ public class Main {
         cardpayment.sale = false ;
 
 
-        System.out.println("გადახის ტიპი: " +  cardpayment.paymentMethodCash());
+
         System.out.println("გადამხდელი: " +  cardpayment.fullName);
+        System.out.println("გადახდის ტიპი : " +   cardpayment.paymenType);
         System.out.println("ბარათის ნომერი: " +  cardpayment.CardNumber);
         System.out.println("თანხა: " +  cardpayment.amount + " ₾");
         System.out.println("გადახდა დადასტურებულია: " + ( cardpayment.verify ? "დიახ" : "არა"));
@@ -23,13 +24,14 @@ public class Main {
 
         Payment cashpayment = new Payment();
         cashpayment.fullName = "გიორგი სეთურიძე";
+        cashpayment.paymenType = "ნაღდი ანგარიშსწორება";
         cashpayment.amount = 101;
         cashpayment.verify = true ;
         cashpayment.recipe = true ;
         cashpayment.sale = true ;
 
-        System.out.println("გადახის ტიპი: " +  cashpayment.paymentMethodCard());
         System.out.println("გადამხდელი: " +  cashpayment.fullName);
+        System.out.println("გადახდის ტიპი : " + cashpayment.paymenType);
         System.out.println("თანხა: " +  cashpayment.amount + " ₾");
         System.out.println("გადახდა დადასტურებულია: " + ( cashpayment.verify ? "დიახ" : "არა"));
         System.out.println("ქვითარი გაცემულია: " + ( cashpayment.recipe ? "დიახ" : "არა"));

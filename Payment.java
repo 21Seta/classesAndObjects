@@ -1,13 +1,20 @@
-public class PaymentMethod {
+public class Payment {
 
     String fullName ;
     String CardNumber;
     int amount ;
-    double verify ;
-    double recipe ;
-    String paymentMethod() {
-        return "გადახდა ხდება ქეშით + 100 ზემოთ შენაძენზე გეკუთვნით 10 % ფასდაკლება" +
-                "თუ ხდება ბარათით + 100 შენაძენზე ზემოთ გეკუთვნით 20 % ფასდაკლება";
+    boolean verify ;
+    boolean recipe ;
+    boolean sale ;
+    String paymenType;
+    String paymentMethodCard() {
+        return
+                "თუ გადახდა ხდება ბარათით + 100 შენაძენზე ზემოთ გეკუთვნით 20 % ფასდაკლება ";
+    }
+
+    String paymentMethodCash() {
+        return
+                "თუ გადახდა ხდება ქეშით + 100 შენაძენზე ზემოთ გეკუთვნით 10 % ფასდაკლება ";
     }
 
 }
