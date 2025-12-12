@@ -13,7 +13,6 @@ public class Main {
 
         System.out.println("გადახის ტიპი: " +  cardpayment.paymentMethodCash());
         System.out.println("გადამხდელი: " +  cardpayment.fullName);
-
         System.out.println("ბარათის ნომერი: " +  cardpayment.CardNumber);
         System.out.println("თანხა: " +  cardpayment.amount + " ₾");
         System.out.println("გადახდა დადასტურებულია: " + ( cardpayment.verify ? "დიახ" : "არა"));
