@@ -28,7 +28,7 @@ public class Main {
         cashpayment.recipe = true ;
         cashpayment.sale = true ;
 
-        System.out.println("გადახის ტიპი: " +  cardpayment.paymentMethodCard());
+        System.out.println("გადახის ტიპი: " +  cashpayment.paymentMethodCard());
         System.out.println("გადამხდელი: " +  cashpayment.fullName);
         System.out.println("თანხა: " +  cashpayment.amount + " ₾");
         System.out.println("გადახდა დადასტურებულია: " + ( cashpayment.verify ? "დიახ" : "არა"));
