@@ -32,6 +32,7 @@ public class Main {
         System.out.println("გადამხდელი: " +  cashpayment.fullName);
         System.out.println("თანხა: " +  cashpayment.amount + " ₾");
         System.out.println("გადახდა დადასტურებულია: " + ( cashpayment.verify ? "დიახ" : "არა"));
+        System.out.println("ქვითარი გაცემულია: " + ( cashpayment.recipe ? "დიახ" : "არა"));
         System.out.println("ფასდაკლება: " + ( cashpayment.sale ? "დიახ" : "არა"));
 
     }
